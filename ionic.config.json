@@ -1,0 +1,7 @@
+{
+  "name": "Gamificaksi Ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

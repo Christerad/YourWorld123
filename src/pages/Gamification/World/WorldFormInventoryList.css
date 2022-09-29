@@ -1,0 +1,44 @@
+.inv-grid-mobileForm{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+}
+
+
+.inv-grid-dekstop{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+.inv-grid{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
+
+
+.ImgListPlant2{
+    width: 70%;
+    height: 50%;
+}
+
+.Field2{
+    --min-height: 270px;
+    font-size: 13px;
+}
+
+.Field2-mobile{
+    ---min-height: 105px;
+    font-size: 9px;
+}
+    
+.StarIcon-Mobile{
+    font-size: 15px;
+}
+
+.StarIcon-Desktop{
+    font-size: 20px;
+}

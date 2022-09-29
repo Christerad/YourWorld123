@@ -1,0 +1,26 @@
+
+ion-list{
+    /* font-family:'Upheaval'; */
+    font-family: Retrogaming !important;
+}
+
+ion-item{
+    font-family: Retrogaming !important;
+     /* font-family:'Upheaval' */
+}
+.Hello{
+    font-size: clamp(10px,1vw,20px);
+}
+
+@font-face {
+    font-family: "Retrogaming";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../components/Asset/Fonts//Retro_Gaming/Retro\ Gaming.ttf");
+  }
+
+
+.modal-wrapper4 {
+    --width: 100%;
+    --height: 70%;
+}

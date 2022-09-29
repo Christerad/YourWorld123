@@ -1,0 +1,88 @@
+.modal-wrapper4{
+    --width: 100%;
+    --height: 70%;
+  }
+
+.ImgThrophy{
+  width: 50px;
+  height:50px;
+}
+
+ion-item{
+  font-family: Retrogaming !important;
+  font-size: smaller;
+   /* font-family:'Upheaval' */
+}
+
+.UsernameFont{
+  font-family: Retrogaming !important;
+  font-size: large;
+}
+
+
+
+@font-face {
+  font-family: "Retrogaming";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../../components/Asset/Fonts//Retro_Gaming/Retro\ Gaming.ttf");
+}
+
+
+.IonItemRoundedDoang {
+  border-radius: 20px !important;
+  --background:  repeating-radial-gradient( circle at 0 0, transparent 0, #9797c1 60% ), repeating-linear-gradient( #4c4f7d55, #4c4f7d );
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.blurred-box{
+  position: relative;
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.blurred-box:after{
+  content: '';
+  background: inherit; 
+  position: absolute;
+  left: -25px;
+
+  right: 0;
+  top: -25px;  
+
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+  filter: blur(10px);
+ }
+
+
+ .Field3-mobile{
+  /* --min-height: 50vw; */
+  
+  /* --background: transparent !important; */
+  --background:  repeating-radial-gradient( circle at 0 0, transparent 0, #9797c1 150px ), repeating-linear-gradient( #4c4f7d55, #4c4f7d );
+
+  font-size: 10px;
+  /* margin: 10px; */
+
+
+}
+
+.Field3-desktop{
+  /* --min-height: 50vw; */
+  /* background-color: #9797c1;
+  opacity: 0.3;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #9797c1 10px ), repeating-linear-gradient( #4c4f7d55, #4c4f7d ); */
+
+  --background:  repeating-radial-gradient( circle at 0 0, transparent 0, #9797c1 2.5vmin ), repeating-linear-gradient( #4c4f7d55, #4c4f7d );
+
+
+  /* --background:  repeating-linear-gradient( 45deg, RGBA(177,72,72,0), RGBA(177,72,72,0) 20px, #e5e5f7 5px, #e5e5f7 25px ) !important; */
+  font-size: 15px;
+  /* margin: 10px; */
+}

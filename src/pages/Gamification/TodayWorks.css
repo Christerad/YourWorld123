@@ -1,0 +1,144 @@
+.test1{
+    width: 100%;
+}
+
+.Field3-mobile{
+    /* --min-height: 50vw; */
+    /* --background: transparent !important; */
+    --background:  repeating-radial-gradient( circle at 0 0, transparent 0, #9797c1 250px ), repeating-linear-gradient( #4c4f7d55, #4c4f7d ) !important;
+    font-size: 5px;
+    /* margin: 10px; */
+}
+
+.List-backtrans{
+  background-color: transparent !important;
+}
+
+.MainGrid-desktop{
+  /* position: relative;
+  background: inherit;
+  border-radius: 2px;
+  overflow: hidden; */
+
+   font-size: 15px;
+  /* margin: 10px; */
+}
+
+/* .MainGrid-desktop:after{
+  content: '';
+  background: inherit; 
+  position: absolute;
+  left: -25px;
+
+  right: 0;
+  top: -25px;  
+
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+  filter: blur(10px);
+} */
+
+.MainGrid-Mobile{
+   font-size: 12px;
+  }
+
+
+
+
+.GridTags-mobile{
+    display: grid;
+    /* --ion-grid-columns:2; */
+    /* grid-template-columns: 1fr 1fr; */
+    font-size: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr))
+    /* font-size: small; */
+}
+
+.TagsIcon-mobile{
+    font-size: 15px;
+}
+
+.Font{
+    /* font-family: 'Upheaval', Courier, monospace; */
+    font-family: Retrogaming !important;
+    font-size: 2.5vmin;
+}
+
+.Font-Desktop{
+  /* font-family: 'Upheaval', Courier, monospace; */
+  font-family: Retrogaming !important;
+  font-size: 9px;
+}
+
+.Font-Mobile{
+  /* font-family: 'Upheaval', Courier, monospace; */
+  font-family: Retrogaming !important;
+  font-size: 9px;
+}
+
+.Font-Judul{
+  /* font-family: 'Upheaval', Courier, monospace; */
+  font-family: Retrogaming !important;
+  font-size: 15px;
+}
+
+ion-list{
+    /* font-family:'Upheaval'; */
+    font-family: Retrogaming !important;
+}
+
+ion-item{
+    font-family: Retrogaming !important;
+     /* font-family:'Upheaval' */
+}
+
+@font-face {
+    font-family: "Retrogaming";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../../components/Asset/Fonts//Retro_Gaming/Retro\ Gaming.ttf");
+  }
+
+
+  .ListInvisBack{
+    --background: transparent !important;
+  } 
+
+  .Margin{
+    margin: 10px;
+  } 
+
+  .blurred-box{
+    position: relative;
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .blurred-box:after{
+    content: '';
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+
+    right: 0;
+    top: -25px;  
+
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(10px);
+   }
+
+   .IonItemRoundedDoang {
+    border-radius: 20px !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    /* background-color: #e5e5f7;
+    opacity: 0.8;
+    background: repeating-linear-gradient( 45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px ); */
+  }
+  
+  

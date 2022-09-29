@@ -1,0 +1,191 @@
+.BackgroundDesolate{
+    --background: #fff url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg') no-repeat center center / cover;
+}
+
+.BackgroundDesolate2{
+    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');    
+}
+
+ion-col.left2{
+    align-content: flex-end;
+    width: 100%;
+    size: 150px;
+}
+
+
+
+.img-grid-mobile{
+    background-image: url('../../../components/Image/Desert.png');
+    /* margin: px auto; */
+    display: grid;
+    /* --ion-grid-columns:2 */
+    grid-template-columns:repeat(auto-fill, minmax(90px, 1fr));
+    grid-template-rows: none;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+
+}
+
+.img-grid-desktop{
+    background-image: url('../../../components/Image/Desert.png');
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  */
+     grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); 
+    /* --ion-grid-columns:2 */
+    grid-template-rows: none;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.img-warp{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+    opacity: 0.8;
+}
+
+.img-warp2{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-warp{
+    background-image: url('https://media.istockphoto.com/vectors/geometrical-square-mosaic-background-vector-design-from-squares-in-vector-id854658390?k=20&m=854658390&s=612x612&w=0&h=LunJSDeswTeQYYYoKKn4XrEzJ3QTcns8dNjGtKlB7Kc=');
+}
+
+.Colbackground{
+    /* background :url('../../../components/Image/Field.png');
+     */
+    background :url('../../../components/Image/Field.png');
+    background-size: 100%;
+    /* width: 255px;
+    height: 255px; */
+}
+
+.FieldWorldItem{
+    --background: transparent;
+    --min-height: 150px;
+    font-size: 15px;
+}
+
+/* .FieldWorldItem::before{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(100%);
+} */
+
+.Field-mobile{
+    --background :transparent;
+    --min-height: 120px;
+    font-size: 9px;
+}
+
+.StarIcon-Mobile{
+    font-size: 15px;
+}
+
+
+.AvailPlant{
+    --min-height: 40vh;
+    font-size: 2vw;
+}
+
+.ImgTicket{
+    width: 50px;
+    height:50px;
+  }
+
+.modal-wrapper2{
+--width: 200px;
+--height: 250px;
+}
+
+.modal-wrapper2-mobile{
+    --width: 200px;
+    --height: 300px;
+}
+
+.ImgTicket-2{
+    width: 100px;
+    height:100px;
+  }
+
+.modal-wrapper1{
+    --min-height: 30%;
+    --min-width :75%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #91859d, #23d5ab) !important;
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+.ImgSelectedPlant{
+    width: 50%;
+    height:300px;
+  }
+
+.ImgListPlant1{
+    /* --min-height: 50px;
+    --min-width :100px; */
+    width: 75%;
+    height:75%;
+    /* min-width: 50px;
+    min-height: 500px; */
+}
+
+.ImgListPlant{
+    /* --min-height: 50px;
+    --min-width :100px; */
+    width: 100%;
+    height:100%;
+    /* min-width: 50px;
+    min-height: 500px; */
+}
+
+.fontticketsize{
+    font-size: clamp(10px,1vw,30px);
+}
+
+
+.ListInvisBack{
+    --background: transparent !important;
+  } 
+
+  .blurred-box{
+    position: relative;
+    background: inherit;
+    border-radius: 2px;
+    overflow: hidden;
+    --min-height: 30%;
+    --min-width :75%;
+  }
+
+  .blurred-box:after{
+    content: '';
+    background: inherit; 
+    position: absolute;
+    left: -25px;
+
+    right: 0;
+    top: -25px;  
+
+    bottom: 0;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+    filter: blur(10px);
+   }
+
+   ion-content.FormInven2{
+
+    --background: linear-gradient(-45deg, #ee7752, #e73c7e, #91859d, #23d5ab);
+      background-size: 400% 400%;
+      -webkit-animation: gradient 15s ease infinite;
+              animation: gradient 15s ease infinite;
+  }

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Gamificaksi Ionic",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

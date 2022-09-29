@@ -1,0 +1,94 @@
+#login-email,
+#login-password {
+  border: black;
+  border-width: 2px;
+  border-radius: 6px;
+  text-align: start;
+  height: 3rem;
+  margin-top: 1rem;
+  margin-left: 0.8rem;
+  font-size: 18px;
+  max-width: 17rem;
+}
+
+.login-section {
+  width: 80%;
+  margin-left: 2.7rem;
+  margin-top: 7rem;
+}
+
+.title {
+  margin-bottom: 0rem;
+  margin-top: 3rem;
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+.button1 {
+  margin: auto;
+  width: 70%;
+  font-size: 18px;
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.to-register {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.to-registerMobile {
+  font-size: 0.875em;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.Main-Icon{
+  width: 30vw;
+  height:30hw;
+}
+
+.RoundedItems{
+  --background: transparent !important;
+  
+  border-radius: 20px !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+} 
+
+.backgroundnull{
+  --background: transparent !important;
+} 
+
+.BackgroundYo {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #925ea1, #c4276b);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -1,0 +1,43 @@
+.Inven{
+    --background: transparent !important;
+    --min-height: 150px;
+    font-size: 15px;
+}
+
+.Inven-Mobile{
+    --background: transparent !important;
+    --min-height: 150px;
+    font-size: 9px;
+}
+
+.inv-grid-mobile{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(100px, 1fr))
+}
+
+
+.inv-grid-dekstop{
+    
+    margin: 20px auto;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr ; */
+    grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); 
+
+}
+
+.ListInvisBack{
+    --background: transparent !important;
+  } 
+
+  .StarIcon-Mobile{
+    font-size: 15px;
+}
+
+.Text-Desktop{
+    font-size: 13px;
+}
+
+.Text-Mobile{
+    font-size: 10px;
+}

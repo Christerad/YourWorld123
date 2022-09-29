@@ -1,0 +1,66 @@
+.BackgroundDesolate{
+    --background: #fff url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg') no-repeat center center / cover;
+}
+
+.BackgroundDesolate2{
+    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');    
+}
+
+ion-col.left2{
+    align-content: flex-end;
+    width: 100%;
+    size: 150px;
+}
+
+ .img-grid{
+    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-grid-mobile{
+    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-grid-desktop{
+    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img-warp{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    position: relative;
+    opacity: 0.8;
+}
+
+.img-warp img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-warp{
+    background-image: url('https://media.istockphoto.com/vectors/geometrical-square-mosaic-background-vector-design-from-squares-in-vector-id854658390?k=20&m=854658390&s=612x612&w=0&h=LunJSDeswTeQYYYoKKn4XrEzJ3QTcns8dNjGtKlB7Kc=');
+}
+
+.Field{
+    --background :url('../../../components/Image/Field.png');
+    --min-height: 40vh;
+    font-size: 2vw;
+}
+
+.ItemBackInvis{
+    --background : transparent !important;
+
+}

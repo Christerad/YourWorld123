@@ -1,0 +1,29 @@
+.test1{
+    width: 100%;
+}
+
+.Field3-mobile{
+    /* --min-height: 50vw; */
+    font-size: 10px;
+}
+
+.Field3-desktop{
+    /* --min-height: 50vw; */
+    font-size: 15px;
+}
+
+.GridTags-mobile{
+    display: grid;
+    /* --ion-grid-columns:2; */
+    /* grid-template-columns: 1fr 1fr; */
+    font-size: 20px;
+    /* font-size: small; */
+}
+
+.TagsIcon-mobile{
+    font-size: 20px;
+}
+
+.Font{
+    font-size: 2.5vmin;
+}
