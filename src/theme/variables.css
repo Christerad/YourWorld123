@@ -324,11 +324,19 @@ ion-menu.MenuBackgroundish {
 	--ion-background-color: linear-gradient(-45deg, #ee7752, #559ca5, #91859d, #d06767);
 	/* background-size: 400% 400%; */
   --ion-text-color: var(--ion-color-primary-contrast);
-
-
-
-
 }
+
+.TutoImage{
+  width: 250px;
+  height: 250px;
+}
+
+.TutoImage1{
+  /* width: 2px; */
+  height: 250px;
+}
+
+
 
 ion-toolbar.ToolbarBackground {
 	--background: linear-gradient(-45deg, #ee7752, #e73c7e, #91859d, #23d5ab);

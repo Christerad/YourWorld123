@@ -98,7 +98,7 @@ const OtherWorldList: React.FC<{UID :string}> = (props) => {
 
    if(isPlatform('mobile')){
     return(
-      <IonList>
+      <IonList class='ListBackInvis'>
       <IonRow>
         <IonCol>
           <IonRow>
@@ -122,28 +122,28 @@ const OtherWorldList: React.FC<{UID :string}> = (props) => {
                           <IonImg src={item.Image}/>
                         </IonRow>
                         <IonRow class='ion-justify-content-center'>
-                          <IonLabel>
+                          <IonText>
                             {/* PLantID :{item.PlantID} */}
                             {item.Name}
-                          </IonLabel>
+                          </IonText>
                         </IonRow>
 
                         {item.Rarity==1 && (
                             <IonRow class='ion-justify-content-center'>
-                                <IonIcon src={star}></IonIcon>    
+                                <IonIcon  src={star}></IonIcon>    
                             </IonRow>
                         )}
                         {item.Rarity==2 && (
                             <IonRow class='ion-justify-content-center'>
-                                <IonIcon src={star}/>
-                                <IonIcon src={star}/>
+                                <IonIcon  src={star}/>
+                                <IonIcon  src={star}/>
                             </IonRow>
                         )}                   
                         {item.Rarity==3 && (
                             <IonRow class='ion-justify-content-center'>
                                 <IonIcon src={star}/>
-                                <IonIcon src={star}/>
-                                <IonIcon src={star}/>
+                                <IonIcon  src={star}/>
+                                <IonIcon  src={star}/>
                             </IonRow>
                         )}
                       </IonCol>

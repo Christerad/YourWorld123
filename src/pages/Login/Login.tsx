@@ -141,7 +141,7 @@ const Login: React.FC = () => {
                   if (snapshot.exists()) {
                     if(snapshot.val().FirstLogin == true){
                         console.log("Going to Tutorial")
-                      history.push("/Timer")
+                      history.push("/Tutorial")
                     }else{
                         console.log("Going to Timer")
                       history.push("/Timer")
