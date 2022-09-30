@@ -31,20 +31,112 @@ const AchievementsList2: React.FC<{UID :string}> = (props) => {
    const [VHardCount,SetVHardCount]=useState<number | any>()
 
    const snapshotToArray = (snapshot: any) => {
-    const returnArr: any[] = []
-    snapshot.forEach((childSnapshot: any) => {   
-        console.log('childsnapshot :',childSnapshot.key)
-        const item = childSnapshot.val()
-        item.key = childSnapshot.key
-        if(childSnapshot.val().StatusSelesai==false){
-          console.log('childsnapshot True :',childSnapshot.key)
-          returnArr.push(item)
+        const returnArr: any[] = []
+        snapshot.forEach((childSnapshot: any) => {   
+            console.log('childsnapshot :',childSnapshot.key)
+            const item = childSnapshot.val()
+            item.key = childSnapshot.key
+            if(childSnapshot.val().StatusSelesai==false){
+            console.log('childsnapshot True :',childSnapshot.key)
+            returnArr.push(item)
 
-        }
-    });
-    return returnArr;
-}
+            }
+        });
+        return returnArr;
+    }
     
+    const GetSuccessTaskDiff1= async ()=>{
+        var Hello=0
+
+        const mostViewedPosts22=
+        query(ref(db, 'Schedule/'+props.UID)
+        );
+
+        onValue(mostViewedPosts22, (snapshot) => {
+            let data1 = snapshotToArray(snapshot) 
+            //  console.log(data1)
+
+             snapshot.forEach((childsnapshot)=>{
+                if(childsnapshot.val().Difficulty==1 && childsnapshot.val().StatusSelesai==true)
+                {
+                    Hello=Hello+1
+                }
+              })
+              SetEasyCount(Hello);
+        });
+    }
+
+
+
+    const GetSuccessTaskDiff2= async ()=>{
+        var Hello=0
+        
+        const mostViewedPosts22=
+        query(ref(db, 'Schedule/'+props.UID)
+          ,orderByChild("DateBerhasil")
+        );
+
+        onValue(mostViewedPosts22, (snapshot) => {
+            let data1 = snapshotToArray(snapshot) 
+            //  console.log(data1)
+
+             snapshot.forEach((childsnapshot)=>{
+                if(childsnapshot.val().Difficulty==2 && childsnapshot.val().StatusSelesai==true)
+                {
+                    Hello=Hello+1
+                }
+              })
+              SetMedCount(Hello);
+        });
+    }
+
+   
+
+    const GetSuccessTaskDiff3= async ()=>{
+        var Hello=0
+        
+        const mostViewedPosts22=
+        query(ref(db, 'Schedule/'+props.UID)
+          ,orderByChild("DateBerhasil")
+        );
+
+        onValue(mostViewedPosts22, (snapshot) => {
+            let data1 = snapshotToArray(snapshot) 
+            //  console.log(data1)
+
+             snapshot.forEach((childsnapshot)=>{
+                if(childsnapshot.val().Difficulty==3 && childsnapshot.val().StatusSelesai==true)
+                {
+                    Hello=Hello+1
+                }
+              })
+              SetHardCount(Hello);
+        });
+    }
+
+    
+
+    const GetSuccessTaskDiff4= async ()=>{
+        var Hello=0
+        
+        const mostViewedPosts22=
+        query(ref(db, 'Schedule/'+props.UID)
+          ,orderByChild("DateBerhasil")
+        );
+
+        onValue(mostViewedPosts22, (snapshot) => {
+            let data1 = snapshotToArray(snapshot) 
+            //  console.log(data1)
+
+             snapshot.forEach((childsnapshot)=>{
+                if(childsnapshot.val().Difficulty==4 && childsnapshot.val().StatusSelesai==true)
+                {
+                    Hello=Hello+1
+                }
+              })
+              SetVHardCount(Hello);
+        });
+    }
 
     const db = getDatabase();
     
@@ -55,6 +147,12 @@ const AchievementsList2: React.FC<{UID :string}> = (props) => {
                 if(snapshot.exists()){
 
                     console.log('data found')
+                    console.log(snapshot.val()) 
+                    SetTaskCount(snapshot.val().TaskDone)
+                    SetStudyCount(snapshot.val().TaskStudyDone)
+                    SetHomeworkCount(snapshot.val().TaskHomeWorkDone)
+                    SetClassCount(snapshot.val().TaskClassDone)
+                    SetTestCount(snapshot.val().TaskTestDone)
                     console.log(snapshot.val()) 
  
                     //let data1 = snapshotToArray(snapshot) 
@@ -68,6 +166,11 @@ const AchievementsList2: React.FC<{UID :string}> = (props) => {
                     setShowLoading(false);
                 }
             });
+
+            GetSuccessTaskDiff1()
+            GetSuccessTaskDiff2()
+            GetSuccessTaskDiff3()
+            GetSuccessTaskDiff4()
 
 
             // const DiffEasy = query(ref(db, '/Schedule/' + props.UID), orderByChild("Difficulty"), equalTo(1));

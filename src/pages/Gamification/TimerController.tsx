@@ -513,7 +513,11 @@ const loadData =  () => {
 
 
       SetTimerOn(childsnapshot.val().StatusMulai)
-      if(TimePenaltyleft.current!=0 && TimerOn) SetTimerPenaltyOn(true)
+      if(TimePenaltyleft.current!=0 && !TimerOn) SetTimerPenaltyOn(true)
+
+      // console.log('Time Left, Timer',TimePenaltyleft.current!=0,', ' ,TimerPenaltyOn)
+
+      // console.log('Timer Penalty',TimerPenaltyOn)
 
       //SetTime(childsnapshot.val().Timer)
       //console.log("Timer  Get Data: ",childsnapshot.val().Timer)
