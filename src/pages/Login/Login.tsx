@@ -256,8 +256,8 @@ const Login: React.FC = () => {
                         <IonTitle>Login Page</IonTitle>
                     </IonToolbar>
                 </IonHeader> */}
-                <IonContent fullscreen>
-                    <IonGrid class='BackgroundYo'>
+                <IonContent fullscreen class='LoginandRegis'>
+                    <IonGrid >
                     
                     <IonRow >
                         <IonCol class='ion-text-center'>

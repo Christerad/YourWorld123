@@ -28,7 +28,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol
         
     const [showLoading, setShowLoading] = useState(true);
 
-    const [IsEmptyDataEasy, ]=useState(true)
+    const [IsEmptyDataEasy,setIsEmptyDataEasy ]=useState(true)
     const [IsEmptyDataMed,setIsEmptyDataMed]=useState(true)
     const [IsEmptyDataHard,setIsEmptyDataHard]=useState(true)
     const [IsEmptyDataVHard,setIsEmptyDataVHard]=useState(true)
@@ -863,6 +863,10 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol
                     onDidDismiss={() => setShowLoading(false)}
                     message={'Loading...'}
                 />
+
+                {/* <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
+                        <IonRefresherContent></IonRefresherContent>
+                </IonRefresher> */}
             </IonContent>
         </IonPage>
         
