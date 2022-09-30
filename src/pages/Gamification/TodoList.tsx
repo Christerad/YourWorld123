@@ -395,10 +395,10 @@ const TodoList: React.FC<{UID :string}> = (props) => {
                           <h3>{item.TaskName}</h3>
                           </IonRow>
                           <IonRow>
-                            Keterangan : {item.Keterangan}
+                            <IonText class='Font'>{item.Keterangan}</IonText>
                           </IonRow>
                           <IonRow>
-                            Time To Complete : {secondsToTime(item.Timer)}
+                            <IonText class='Font'>Time To Complete : {secondsToTime(item.Timer)}</IonText>
                           </IonRow>
                           {/* <IonRow>
                             DueDate : {formatDate(item.DueDate)}
