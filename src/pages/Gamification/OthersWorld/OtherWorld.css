@@ -20,18 +20,54 @@ ion-col.left2{
 }
 
 .img-grid-mobile{
-    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');
-    margin: 20px auto;
+    background-image: url('../../../components/Image/Desert.png');
+    /* margin: px auto; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* --ion-grid-columns:2 */
+    grid-template-columns:repeat(auto-fill, minmax(90px, 1fr));
+    grid-template-rows: none;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+
 }
 
-.img-grid-desktop{
-    background-image: url('https://t4.ftcdn.net/jpg/03/40/81/99/360_F_340819925_gSCToZxARXO8sGO0wzArsuAr3kNqLamr.jpg');
-    margin: 20px auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.FieldWorldItem{
+    --background: transparent;
+    --min-height: 150px;
+    font-size: 15px;
 }
+
+/* .FieldWorldItem::before{
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    padding-bottom: calc(100%);
+} */
+
+.Field-mobile{
+    --background :transparent;
+    --min-height: 120px;
+    font-size: 9px;
+}
+
+.StarIcon-Mobile{
+    font-size: 15px;
+}
+
+.img-grid-desktopOther{
+    background-image: url('../../../components/Image/Desert.png');
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  */
+     grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); 
+    /* --ion-grid-columns:2 */
+    grid-template-rows: none;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    font-size: 15px;
+}
+
 
 .img-warp{
     overflow: hidden;
@@ -62,5 +98,8 @@ ion-col.left2{
 
 .ItemBackInvis{
     --background : transparent !important;
+}
 
+.ListBackInvis{
+    background : transparent !important;
 }

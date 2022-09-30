@@ -110,9 +110,9 @@ const OtherWorldList: React.FC<{UID :string}> = (props) => {
               </IonCol>
             )}
               {data && data.map((item) => (
-              <IonCol>
+              <IonCol class='Colbackground'>
 
-                  <IonItem key={item.key} class='Field' id='Open-Field'>
+                  <IonItem key={item.key} class='Field-mobile' id='Open-Field'>
                     {/* <IonRow> */}
                       {/* <IonImg src='https://media.istockphoto.com/vectors/geometrical-square-mosaic-background-vector-design-from-squares-in-vector-id854658390?k=20&m=854658390&s=612x612&w=0&h=LunJSDeswTeQYYYoKKn4XrEzJ3QTcns8dNjGtKlB7Kc=' />   */}
                     {/* </IonRow> */}
@@ -174,11 +174,11 @@ const OtherWorldList: React.FC<{UID :string}> = (props) => {
    }   
     else{
     return(
-        <IonList class='ItemBackInvis'>
+        <IonList class='ListBackInvis'>
           <IonRow>
             <IonCol>
               <IonRow>
-
+  
                 <IonGrid class='img-grid-desktop'>
                 {IsEmpty && (
                   <IonCol>
@@ -186,9 +186,9 @@ const OtherWorldList: React.FC<{UID :string}> = (props) => {
                   </IonCol>
                 )}
                   {data && data.map((item) => (
-                  <IonCol>
+                  <IonCol class='Colbackground'>
 
-                      <IonItem key={item.key} class='Field' id='Open-Field'>
+                      <IonItem key={item.key} class='FieldWorldItem' id='Open-Field'>
                         {/* <IonRow> */}
                           {/* <IonImg src='https://media.istockphoto.com/vectors/geometrical-square-mosaic-background-vector-design-from-squares-in-vector-id854658390?k=20&m=854658390&s=612x612&w=0&h=LunJSDeswTeQYYYoKKn4XrEzJ3QTcns8dNjGtKlB7Kc=' />   */}
                         {/* </IonRow> */}
@@ -228,7 +228,7 @@ const OtherWorldList: React.FC<{UID :string}> = (props) => {
                       </IonItem>
                   </IonCol>
                   ))}
-                </IonGrid>
+                </IonGrid>            
               </IonRow>
             </IonCol>
           </IonRow>
