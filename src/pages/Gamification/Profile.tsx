@@ -97,7 +97,7 @@ return(
         <IonRow>
             <IonCol>
                 <IonRow class='ion-justify-content-center'>
-                    <IonImg src={ProfilePhotoURL} />
+                    <IonImg class='TutoImage' src={ProfilePhotoURL} />
                 </IonRow>
             </IonCol>
         </IonRow>

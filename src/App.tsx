@@ -243,9 +243,58 @@ const App: React.FC = () => {
   return(
     <IonApp>
       <IonReactRouter>
+        <IonRouterOutlet id='First'>
+          <Route exact path="/">
+              <Redirect to="/Login" />
+          </Route>
+          <Route path ='/Login' >
+              <Login />
+          </Route>
+          <Route  path ='/Tutorial' >
+              <Tutorial />
+          </Route>
+          <Route  path ='/Register' >
+              <Register />
+          </Route>
+          <Route  path ='/Profile' >
+              <Profile />
+          </Route>
+          <Route path='/World' >
+            <World />
+          </Route>
+          <Route path='/Todolist'  >
+            <Todolist/>
+          </Route>
+          <Route path='/Schedule'>
+            <Schedule/>
+          </Route>
+          <Route path='/Timer' exact>
+              <Timer/>
+          </Route>
+          <Route path='/Achievements2' >
+            <Achievements2/>
+          </Route>
+          <Route path='/Leaderboard'  >
+            <Leaderboard/>
+          </Route>
+          <Route path='/Gacha'  >
+            <Gacha/>
+          </Route>
+          <Route path='/Prob'  >
+            <Prob/>
+          </Route>
+
+          <Route path ='/TodaysWorks'> 
+              <TodaysWork />
+          </Route>
+        </IonRouterOutlet>
+        
         <IonMenu side="start" contentId='First' class='MenuBackgroundish'>
           <IonContent>
             <IonList class='ListBackgroundmenu'>
+              {/* <IonItem href='/Tutorial'> 
+                  <IonLabel>Narrative</IonLabel>
+              </IonItem> */}
               <IonItem href='/World'>
                   <IonIcon icon={globe} class='IconAuto'/>
                   <IonLabel>World</IonLabel>
@@ -274,6 +323,7 @@ const App: React.FC = () => {
                   <IonIcon icon={leaf} class='IconAuto'/>
                   <IonLabel>summon</IonLabel>
               </IonItem>
+
             </IonList>
             <IonRow>
               <IonCol>
@@ -287,50 +337,7 @@ const App: React.FC = () => {
         </IonMenu>
 
       
-        <IonRouterOutlet id='First'>
-          <Route exact path="/">
-              <Redirect to="/Login" />
-          </Route>
-          <Route path ='/Login' >
-              <Login />
-          </Route>
-          <Route  path ='/Register' >
-              <Register />
-          </Route>
-          <Route  path ='/Profile' >
-              <Profile />
-          </Route>
-          <Route path='/World' >
-            <World />
-          </Route>
-          <Route path='/Todolist'  >
-            <Todolist/>
-          </Route>
-          <Route path='/Schedule'>
-            <Schedule/>
-          </Route>
-          <Route path='/Timer' exact>
-                        <Timer/>
-          </Route>
-          <Route path='/Achievements2' >
-            <Achievements2/>
-          </Route>
-          <Route path='/Leaderboard'  >
-            <Leaderboard/>
-          </Route>
-          <Route path='/Gacha'  >
-            <Gacha/>
-          </Route>
-          <Route path='/Prob'  >
-            <Prob/>
-          </Route>
-          <Route  path ='/Tutorial' >
-                <Tutorial />
-          </Route>
-          <Route path ='/TodaysWorks'> 
-              <TodaysWork />
-          </Route>
-        </IonRouterOutlet>
+
       </IonReactRouter>
 
       { Loggedin &&

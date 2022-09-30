@@ -130,18 +130,21 @@ const Login: React.FC = () => {
     }
 
     onAuthStateChanged(auth, (user) => {
+        // history.push("/Tutorial")
         if (user) {
+        console.log('onAuthStateChanged')
         //   history.push('/Schedule');
           const user = auth.currentUser;            
         //   console.log('user : ',user)
           const dbRef = ref(getDatabase());
-
+        //   console.log('User :',user)
           if(user){
               get(child(dbRef, 'users/' + user.uid)).then((snapshot) => {
                   if (snapshot.exists()) {
+                    console.log(snapshot.val())
                     if(snapshot.val().FirstLogin == true){
                         console.log("Going to Tutorial")
-                      history.push("/Tutorial")
+                      history.push('/Tutorial')
                     }else{
                         console.log("Going to Timer")
                       history.push("/Timer")
@@ -231,6 +234,7 @@ const Login: React.FC = () => {
                                             </IonButton>
                                         </IonCol>
                                     </IonRow>
+
                                 </IonCol>
                             </IonRow>
                         </IonCol>       
