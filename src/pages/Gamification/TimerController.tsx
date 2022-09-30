@@ -643,7 +643,7 @@ useEffect(() => {
               {/* Button Success */}
             </IonCol>
           </IonRow>
-          <IonRow>
+          {/* <IonRow>
             <IonCol>
               <IonRow class='ion-justify-content-center'>
                   <IonButton  onClick={async () =>await TodoFailed(item.key)}>Failed </IonButton>
@@ -655,7 +655,7 @@ useEffect(() => {
               </IonRow>
 
             </IonCol>
-          </IonRow>
+          </IonRow> */}
         </IonGrid>
       ))}
       <IonLoading
