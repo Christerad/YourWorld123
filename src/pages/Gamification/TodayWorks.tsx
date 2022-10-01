@@ -596,7 +596,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol
                                             <IonText>Task Succeed Between 2-4 Hour : {TaskHardDone} </IonText> 
                                         </IonRow>
                                         <IonRow>
-                                            <IonText>Task Succeed Above 6 Hour : {TaskVHardDone} </IonText> 
+                                            <IonText>Task Succeed Above 4 Hour : {TaskVHardDone} </IonText> 
                                         </IonRow>
                                     </IonCol>
                                     <IonCol>
@@ -613,7 +613,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol
                                             <IonText>Task Failed Between 2-4 Hour : {TaskFHardDone} </IonText> 
                                         </IonRow>
                                         <IonRow>
-                                            <IonText>Task Failed Above 6 Hour : {TaskFVHardDone} </IonText> 
+                                            <IonText>Task Failed Above 4 Hour : {TaskFVHardDone} </IonText> 
                                         </IonRow>
                                     </IonCol>
                                 </IonRow>
@@ -737,7 +737,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol
                                             Between 2-4 Hour : {TaskHardDone}
                                         </IonRow>
                                         <IonRow>
-                                            Above 6 Hour : {TaskVHardDone}
+                                            Above 4 Hour : {TaskVHardDone}
                                         </IonRow>
                                     </IonCol>   
                                     <IonCol>
@@ -754,7 +754,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonRow, IonCol
                                             <IonText> Between 2-4 Hour : {TaskFHardDone} </IonText> 
                                         </IonRow>
                                         <IonRow>
-                                            <IonText> Above 6 Hour : {TaskFVHardDone} </IonText> 
+                                            <IonText> Above 4 Hour : {TaskFVHardDone} </IonText> 
                                         </IonRow>
                                     </IonCol>
                                 </IonRow>

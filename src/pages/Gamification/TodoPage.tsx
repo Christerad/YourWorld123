@@ -190,7 +190,7 @@ const Todo: React.FC = () => {
     }
 
     function SetDiff2 (DiffVal : number){
-        if(DiffVal <=3600)
+        if(DiffVal <3600)
         {
             SetDiffculty(1)
             console.log('Difficulty',Difficulty);

@@ -385,7 +385,6 @@ async function IsLevelDown () {
   console.log('Current XP After DeLvling',CurrentXP.current)
 
   while (CurrentXP.current <= 0 && CurrentLevel.current>1){
-    
     // if(CurrentLevel.current>1){
       console.log('XP MInus')
       CurrentLevel.current=CurrentLevel.current-1
@@ -398,14 +397,14 @@ async function IsLevelDown () {
     CurrentXP.current = CurrentXP.current+ MaxXP.current
     console.log('XP :',CurrentXP.current)
 
-    if(CurrentLevel.current<=1 && CurrentXP.current<=0)
-    {
-      CurrentXP.current =0
-    }
-
     SetErrorCode('Oops your level is reduced');
     SetErrorMessage('Time management is not a easy thing, Keep Fighting :D');
     setShowAlert1(true);
+  }
+
+  if(CurrentLevel.current<=1 && CurrentXP.current<=0)
+  {
+    CurrentXP.current =0
   }
 
   const LevelUPData ={

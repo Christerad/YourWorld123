@@ -475,12 +475,12 @@ return(
                         </IonRow>
                     </IonCol>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>1000</IonRow>
+                        <IonRow class='ion-justify-content-center'>200</IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {EasyCount>=1000 && (
+                            {EasyCount>=200 && (
                                 <IonImg class='ImgThrophy' src={GoldTrophy}/>
                             )}
-                            {EasyCount<1000 && (
+                            {EasyCount<200 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
@@ -495,10 +495,22 @@ return(
                 </IonRow>
                 <IonRow>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>50 </IonRow>
+                        <IonRow class='ion-justify-content-center'>25 </IonRow>
+                        <IonRow class='ion-justify-content-center'>
+                            {MedCount>=25 && (
+                                <IonImg class='ImgThrophy' src={CopperTrophy}/>
+                            )}
+                            {MedCount<25 && (
+                                <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
+                            )}
+                        </IonRow>
+                    </IonCol>
+                    <IonCol>
+                        <IonRow class='ion-justify-content-center'>50</IonRow>
                         <IonRow class='ion-justify-content-center'>
                             {MedCount>=50 && (
-                                <IonImg class='ImgThrophy' src={CopperTrophy}/>
+                                <IonImg class='ImgThrophy' src={SilverTrophy}/>
+
                             )}
                             {MedCount<50 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
@@ -509,21 +521,9 @@ return(
                         <IonRow class='ion-justify-content-center'>100</IonRow>
                         <IonRow class='ion-justify-content-center'>
                             {MedCount>=100 && (
-                                <IonImg class='ImgThrophy' src={SilverTrophy}/>
-
-                            )}
-                            {MedCount<100 && (
-                                <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
-                            )}
-                        </IonRow>
-                    </IonCol>
-                    <IonCol>
-                        <IonRow class='ion-justify-content-center'>1000</IonRow>
-                        <IonRow class='ion-justify-content-center'>
-                            {MedCount>=1000 && (
                                 <IonImg class='ImgThrophy' src={GoldTrophy}/>
                             )}
-                            {MedCount<1000 && (
+                            {MedCount<100 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
@@ -538,35 +538,35 @@ return(
                 </IonRow>
                 <IonRow>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>50 </IonRow>
+                        <IonRow class='ion-justify-content-center'>15 </IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {HardCount>=50 && (
+                            {HardCount>=15 && (
                                 <IonImg class='ImgThrophy' src={CopperTrophy}/>
                             )}
-                            {HardCount<50 && (
+                            {HardCount<15 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
                     </IonCol>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>100</IonRow>
+                        <IonRow class='ion-justify-content-center'>30</IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {HardCount>=100 && (
+                            {HardCount>=30 && (
                                 <IonImg class='ImgThrophy' src={SilverTrophy}/>
 
                             )}
-                            {HardCount<100 && (
+                            {HardCount<30 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
                     </IonCol>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>1000</IonRow>
+                        <IonRow class='ion-justify-content-center'>50</IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {HardCount>=1000 && (
+                            {HardCount>=50 && (
                                 <IonImg class='ImgThrophy' src={GoldTrophy}/>
                             )}
-                            {HardCount<1000 && (
+                            {HardCount<50 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
@@ -577,39 +577,39 @@ return(
         <IonItem class='IonItemRoundedDoang'>
             <IonCol>
                 <IonRow>
-                    <IonLabel> Task Done (Above 6 Hour) :{VHardCount} </IonLabel>
+                    <IonLabel> Task Done (Above 4 Hour) :{VHardCount} </IonLabel>
                 </IonRow>
                 <IonRow>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>50 </IonRow>
+                        <IonRow class='ion-justify-content-center'>5 </IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {VHardCount>=50 && (
+                            {VHardCount>=5 && (
                                 <IonImg class='ImgThrophy' src={CopperTrophy}/>
                             )}
-                            {VHardCount<50 && (
+                            {VHardCount<5 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
                     </IonCol>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>100</IonRow>
+                        <IonRow class='ion-justify-content-center'>10</IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {VHardCount>=100 && (
+                            {VHardCount>=10 && (
                                 <IonImg class='ImgThrophy' src={SilverTrophy}/>
 
                             )}
-                            {VHardCount<100 && (
+                            {VHardCount<10 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
                     </IonCol>
                     <IonCol>
-                        <IonRow class='ion-justify-content-center'>1000</IonRow>
+                        <IonRow class='ion-justify-content-center'>20</IonRow>
                         <IonRow class='ion-justify-content-center'>
-                            {VHardCount>=1000 && (
+                            {VHardCount>=20 && (
                                 <IonImg class='ImgThrophy' src={GoldTrophy}/>
                             )}
-                            {VHardCount<1000 && (
+                            {VHardCount<20 && (
                                 <IonImg class='ImgThrophy' src={UnfoundTrophy}/>
                             )}
                         </IonRow>
