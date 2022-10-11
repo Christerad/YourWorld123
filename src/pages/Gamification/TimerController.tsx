@@ -72,8 +72,9 @@ const TimerController: React.FC<{UID :string}> = (props) => {
       CurrentXP.current=CurrentXP.current+MultiPlier.current // Tambah XP
       console.log('Current XP After LvlIng',CurrentXP.current)
 
-      SummonTicket.current=SummonTicket.current+1
+      
       while (CurrentXP.current >= MaxXP.current){
+        SummonTicket.current=SummonTicket.current+1
         console.log('XP OverFlow') //naikin Level
         CurrentLevel.current=CurrentLevel.current+1
         console.log('Level :',CurrentLevel.current) 
