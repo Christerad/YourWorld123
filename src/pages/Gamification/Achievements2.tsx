@@ -90,7 +90,7 @@ return(
                 <IonRow>
                     <LevelController LvL={Level} />
                 </IonRow>
-                <ExperienceController LvL={Level} XP={XP} MaxXP={Level*10} />
+                <ExperienceController LvL={Level} XP={XP} MaxXP={Level*3} />
             </IonCol> 
         </IonRow>
         <IonRow>
