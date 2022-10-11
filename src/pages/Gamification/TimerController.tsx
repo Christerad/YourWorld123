@@ -384,7 +384,7 @@ async function IsLevelDown () {
   CurrentXP.current=CurrentXP.current-MultiPlier.current
   console.log('Current XP After DeLvling',CurrentXP.current)
 
-  while (CurrentXP.current <= 0 && CurrentLevel.current>1){
+  while (CurrentXP.current < 0 && CurrentLevel.current>1){
     // if(CurrentLevel.current>1){
       console.log('XP MInus')
       CurrentLevel.current=CurrentLevel.current-1
@@ -646,7 +646,7 @@ useEffect(() => {
               {/* Button Success */}
             </IonCol>
           </IonRow>
-          {/* <IonRow>
+          <IonRow>
             <IonCol>
               <IonRow class='ion-justify-content-center'>
                   <IonButton  onClick={async () =>await TodoFailed(item.key)}>Failed </IonButton>
@@ -658,7 +658,7 @@ useEffect(() => {
               </IonRow>
 
             </IonCol>
-          </IonRow> */}
+          </IonRow>
         </IonGrid>
       ))}
       <IonLoading
