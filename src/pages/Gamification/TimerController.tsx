@@ -337,7 +337,8 @@ async function TodoSuccess (ListID : String) {
   //   ,InUse : false
   // }
 
-  const res1 = update(ref(db,'/Schedule/' + props.UID + '/' + ListID ), postData).then(() => {
+  const res1 = update(ref(db,'/Schedule/' + props.UID + '/' +
+         ListID ), postData).then(() => {
     IsLevelUP()
     UpdateTaskDone()
     return true
@@ -440,7 +441,8 @@ async function TodoFailed(ListID : String){
     ,DateGagal : format(new Date(),'yyy-MM-dd HH:mm:ss')
   }
 
-  const res1 = await update(ref(db,'/Schedule/' + props.UID + '/' + ListID ), postData).then(() => {
+  const res1 = await update(ref(db,'/Schedule/' + props.UID 
+  + '/' + ListID ), postData).then(() => {
     IsLevelDown()
     return true
   })
